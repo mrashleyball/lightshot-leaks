@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: hsl(0, 0%, 21%)">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <title>Lightshot Leak Generator</title>
-<!--     <py-env>
+    <!--     <py-env>
 - paths:
     - app.py
     </py-env> -->
 </head>
 
-<body>
-    <section class="container">
-        <br>
+<body class="p-5">
+    <section class="container" style="max-width: 1200px;">
         <section class="notification p-10">
             <div class="columns">
-                <h1 class="title column is-4">Lightshot Leaks Generator</h1>
-                <p class="column"><span class="tag is-warning">Discalimer</span>, demonstration purposes only to highlight info security and display how information can be leaked. <span class="tag is-danger">WARNING</span> images may be explicited and contain scams, please be careful.</p>
+                <div class="column is-3">
+                    <h1 class="title"><span class="icon has-text-success"><i
+                                class="fa-solid fa-feather-pointed"></i></span> Lightshot Leak Generator</h1>
+                    <p>Copyright of Skillbrains.com</p>
+                </div>
+                <div class="column">
+                    <h2 class="subtitle">A Note To All Users...</h2>
+                    <span class="tag is-warning is-light">Discalimer</span> 'Lightshot Leak Generator' is for
+                    demonstration purposes only and designed to highlight information security. <span
+                        class="tag is-danger is-light">Warning</span>, images may be explicit, pornographic or contain
+                    scams, users disgression advised. Note, the generate link may take a few seconds to load, please be patient.</p>
+                </div>
             </div>
             <br>
             <div class="columns">
-                <button pys-onClick="generate" id="generate" class="button is-medium column mr-2 is-danger is-light is-one-fifth"><span class="icon is-small"><i class="fa-solid fa-arrow-up-right-from-square"></i></span><span>Generate</span></button>
-                <div class="has-background-white rounded border column" id="output"></div>
+                <div class="column is-3">
+                    <button pys-onClick="generate" id="generate"
+                        class="button is-fullwidth is-success p-5"><span class="icon is-small"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span><span>Generate</span></button>
+                    <!-- <button pys-onClick="generate" id="generate"
+                        class="button is-fullwidth p-5"><span class="icon is-small"><i
+                                class="fa-solid fa-download"></i></span><span>Download</span></button> -->
+                </div>
+
+                <div class="column">
+                    <div class="has-background-white rounded border p-3 has-text-grey-light" id="output">Links will open
+                        in new tab, and display here.</div>
+                </div>
             </div>
         </section>
         <section class="notification">
-            <h1 class="subtitle">About</h1>
+            <div class="content">
+                <h1 class="subtitle">About</h1>
+                <p>Lightshot Leak Generator was inspired from a Linus Tech Tip Video. The popular YouTuber was reacting to TikToks where a user showed how anyone could easily access other peoples private photos. Curious, I tried it, and it of course worked!
+                    After researching into this, a Reddit post from ~2014 originally shared the discovery, at the time this was 8 years ago. </p>
+            </div>
         </section>
     </section>
 </body>
